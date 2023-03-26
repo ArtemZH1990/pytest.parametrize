@@ -7,6 +7,7 @@ url = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 cart_submit_button = "//button[@class='btn btn-lg btn-primary btn-add-to-basket']"
 
 def test_button_cart(browser):
+    """Cart button exist test"""
     try:
         browser.get(url)
         cart_button = browser.find_element(By.XPATH, cart_submit_button)
